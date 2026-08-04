@@ -1,0 +1,162 @@
+analyte_key,abbrev,name_en,name_local,panel,evidence_tier,ucum_canonical,loinc_code,loinc_verified
+anti-CCP,Anti-CCP,Anti-Cyclic Citrullinated Peptide Antibodies,Антитела к циклическому цитруллинированному пептиду,AUTOIMMUNE,C,,,
+RF,RF,Rheumatoid Factor,RF (аббревиатура),AUTOIMMUNE,C,,,
+Basophils/BASO/базофилы,BASO# / BASO% / BAS,Basophils,Базофилы,CBC,C,,,
+Eosinophils/EO/эозинофилы,EO# / EO% / EOS,Eosinophils,Эозинофилы,CBC,C,,,
+ESR (СОЭ - скорость оседания эритроцитов),ESR,Erythrocyte Sedimentation Rate,СОЭ (скорость оседания эритроцитов),CBC,C,mm/h,4537-7,0
+Zinco Eritrocitário,RBC Zn,Erythrocyte Zinc,Цинк в эритроцитах,CBC,C,,,
+Heamatocrit /HCT гематокрит,HCT,Hematocrit,Гематокрит,CBC,C,%,4544-3,0
+Hemoglobin/HGB/гемоглобин,HGB / Hb,Hemoglobin,Гемоглобин,CBC,C,g/L,718-7,0
+IRF,IRF,Immature Reticulocyte Fraction,IRF,CBC,C,,,
+LFR,LFR,Low Fluorescence Ratio (RET),LFR,CBC,C,,,
+Lymphocytes/LYMPH/лимфоциты,LYMPH# / LYMPH% / LYM,Lymphocytes,Лимфоциты,CBC,C,,,
+MCH/среднее содержание гемоглобина в эритроците,MCH,Mean Corpuscular Hemoglobin,Среднее содержание Hb в эритроците,CBC,C,,,
+"MCHC/средняя концентрация гемоглобина в эритроцитарной массе, а не в цельной крови",MCHC,Mean Corpuscular Hemoglobin Concentration,Средняя концентрация Hb в эритроцитах,CBC,C,,,
+MCV/Средний объем эритроцита,MCV,Mean Corpuscular Volume,Средний объем эритроцита,CBC,C,,,
+MPV / средний объем тромбоцитов,MPV,Mean Platelet Volume,MPV,CBC,C,,,
+MFR,MFR,Medium Fluorescence Ratio (RET),MFR,CBC,C,,,
+MXD#,MXD#,Mixed Cell Count (Absolute),MXD#,CBC,C,,,
+MXD%,MXD%,Mixed Cell Count (Percentage),MXD%,CBC,C,,,
+Monocytes/MONO/моноциты,MONO# / MONO% / MON,Monocytes,Моноциты,CBC,C,,,
+Neutrophils/NUET/NEUT%.нейтрофилы,NEUT# / NEUT% / NEU,Neutrophils / Neutrophil %,Нейтрофилы (абс./%),CBC,C,,,
+NEUT#,NEUT#,Neutrophils – Absolute Count,Нейтрофилы (абсолютное значение),CBC,C,,,
+NRBC/Ядросодержащие эритроциты,NRBC,Nucleated Red Blood Cells,Ядросодержащие эритроциты,CBC,C,,,
+PDW,PDW,Platelet Distribution Width,PDW,CBC,C,,,
+P-LCR/процент крупных тромбоцитов,P-LCR,Platelet Large Cell Ratio,P-LCR,CBC,C,,,
+PCT/Прокальцитонин,PCT,Plateletcrit,PCT,CBC,C,,,
+Platelet/PLTтромбоциты,PLT,Platelets,Тромбоциты,CBC,C,10*9/L,777-3,0
+RCC/ Эритроциты/RBS,RBC / RCC,Red Blood Cells,Эритроциты,CBC,C,10*12/L,789-8,0
+RBC / эритроциты,RBC,Red Blood Cells,Эритроциты,CBC,C,10*12/L,789-8,0
+RDW/ширина распределения эритроцитов,RDW,Red Cell Distribution Width,Ширина распределения эритроцитов,CBC,C,,,
+RDW – CV /ширина распределения эритроцитов,RDW-CV,Red Cell Distribution Width – CV,RDW-CV,CBC,C,,,
+RDW-CV,RDW-CV,Red Cell Distribution Width – Coefficient of Variation,RDW-CV,CBC,C,,,
+RDW-SD/ширина распределения эритроцитов (стандартное отклонение),RDW-SD,Red Cell Distribution Width – SD,RDW-SD,CBC,C,,,
+RDW-SD,RDW-SD,Red Cell Distribution Width – Standard Deviation,RDW-SD,CBC,C,,,
+RET-He,RET-He,Reticulocyte Hemoglobin Content,RET-He,CBC,C,,,
+RET/Ретикулоциты:,RET,Reticulocytes,Ретикулоциты,CBC,C,,,
+WBC /лейкоциты,WBC,White Blood Cells,Лейкоциты,CBC,C,,,
+White Blood Cells,WBC,White Blood Cells,Белые клетки крови,CBC,C,,,
+Total WCC/гемоглобин WCC,WBC,White Cell Count / Total WBC,Лейкоциты (общее число),CBC,C,10*9/L,6690-2,0
+Calcium (Adjuste),adj.Ca²⁺,Adjusted Calcium,Кальций скорректированный,ELECTROLYTES,C,,,
+Bicarbonate/Бикарбонат,HCO₃⁻,Bicarbonate,Бикарбонат,ELECTROLYTES,C,,,
+Calcium (Serum),Ca²⁺,Calcium (Serum),Кальций сыворотка,ELECTROLYTES,C,,,
+Chloride/CI-хлор в сыворотке,Cl⁻,Chloride,Хлор,ELECTROLYTES,C,mmol/L,2075-0,0
+Clorémia,Cl⁻,Chloride,Хлор,ELECTROLYTES,C,mmol/L,2075-0,0
+Erythrocyte Magnesium,RBC Mg / Mg²⁺ (RBC),Erythrocyte Magnesium,Магний в эритроцитах,ELECTROLYTES,C,,,
+Phosphate/фосфат,PO₄³⁻,Phosphate,Фосфат,ELECTROLYTES,C,,,
+Potassium/-калий,K⁺,Potassium,Калий,ELECTROLYTES,C,mmol/L,2823-3,0
+Kaliémia,K⁺,Potassium,Калий,ELECTROLYTES,C,mmol/L,2823-3,0
+Sodium/Na+натрий,Na⁺,Sodium,Натрий,ELECTROLYTES,C,mmol/L,2951-2,0
+Natrémia,Na⁺,Sodium,Натрий,ELECTROLYTES,C,mmol/L,2951-2,0
+Calcium (Total)/общий кальций,Ca²⁺,Total Calcium,Кальций общий,ELECTROLYTES,C,mmol/L,17861-6,0
+Clucose,Glu,Glucose,Глюкоза,GLYCEMIC,C,,,
+"Gluc  - fast,plasm / глюкоза в крови",GLU,"Glucose – Fasting, Plasma",Глюкоза в крови натощак (плазма),GLYCEMIC,B,,,
+G6PD test (глюкозо-6-фосфат-дегидрогеназа),G6PD,Glucose-6-Phosphate Dehydrogenase,Глюкозо-6-фосфат-дегидрогеназа,GLYCEMIC,C,,,
+"Глюкозо-6-фосфатдегидрогеназа эритроцитов, активность (Г6ФД, Glucose-6-phosphate dehydrogenase, G6PD, activity)",G6PD,Glucose-6-Phosphate Dehydrogenase (activity),Глюкозо-6-фосфатдегидрогеназа,GLYCEMIC,C,,,
+HbA1c (IFCC),mmol/mol,HbA1c (IFCC),HbA1c (IFCC),GLYCEMIC,A,mmol/mol,59261-8,0
+HbA1c (NGSP),HbA1c,HbA1c (NGSP),HbA1c (NGSP),GLYCEMIC,A,%,4548-4,0
+17 Beta Estradiol,E2,17 Beta Estradiol,17-бета-эстрадиол,HORMONES,C,,,
+Cortisol Plasmático Basal / Basal Plasma Cortisol,Cortisol,Basal Plasma Cortisol,"Кортизол (базальный, плазма)",HORMONES,C,,,
+Sulfato de Dehidroepiandrosterona / Dehydroepiandrosterone Sulfate,DHEA-S,Dehydroepiandrosterone Sulfate,Дегидроэпиандростерон-сульфат (ДЭАС),HORMONES,C,,,
+Dihidrotestosterona em soro (DHT),DHT,Dihydrotestosterone (Serum),Дигидротестостерон,HORMONES,C,,,
+Testosterona Livre,FT / Free T,Free Testosterone,Свободный тестостерон,HORMONES,C,,,
+Testosterona Livre (TL),FT / TL,Free Testosterone,Тестостерон свободный,HORMONES,C,,,
+Luteinoestimulina plasmática (LH),LH,Luteinizing Hormone,Лютеинизирующий гормон (ЛГ),HORMONES,C,,,
+LH (MALE)/Лютеинизирующий гормон,LH,Luteinizing Hormone (LH),Лютеинизирующий гормон,HORMONES,C,,,
+OESTRADIOL (MALE)/ЭСТРАДИОЛ (МУЖЧИНЫ),E2 / Estradiol,Oestradiol (Male),Эстрадиол (мужчины),HORMONES,C,,,
+HORMONE PROFILE (SERUM)(PROL)/Пролактин,PRL,Prolactin,Пролактин,HORMONES,C,,,
+Somatomedina (IGF1) Basal,IGF-1,"Somatomedin C (IGF-1), Basal","Соматомедин (IGF-1), базальный",HORMONES,C,,,
+Testosterone,TT,Testosterone,Тестостерон,HORMONES,C,nmol/L,2986-8,0
+Testosterona Total Plasmática (TT),TT,Total Testosterone,Тестостерон общий,HORMONES,C,,,
+CRP / C-Reactive Protein,CRP,C-Reactive Protein,С-реактивный белок,INFLAMMATION,B,mg/L,1988-5,0
+HEMOCYSTEINE/Гомоцистеин,Hcy,Homocysteine,Гомоцистеин,INFLAMMATION,B,umol/L,13965-9,0
+Ferritin (CMIA),Ferritin,Ferritin,Ферритин,IRON,C,ug/L,2276-4,0
+Iron,Fe,Serum Iron,Железо,IRON,C,,,
+TIBC (Total Iron-Binding Capacity),TIBC,Total Iron-Binding Capacity,Общая железосвязывающая способность,IRON,C,,,
+Transferrin/трансферрин,Tf,Transferrin,Трансферрин,IRON,C,,,
+Saturation,Sat.%,Transferrin Saturation,Насыщение трансферрина,IRON,C,,,
+HDL Cholesterol/Липопротеины высокой плотности (ЛПВП),HDL-C,HDL Cholesterol,ЛПВП,LIPIDS,C,mmol/L,2085-9,0
+HDL Ratio/Индекс атерогенности,TC/HDL or AI,HDL Ratio (Atherogenic Index),Индекс атерогенности,LIPIDS,C,,,
+"LDL Cholesterol/
+Липопротеины низкой плотности (ЛПНП, ЛНП)",LDL-C,LDL Cholesterol,ЛПНП (ЛНП),LIPIDS,B,mmol/L,13457-7,0
+Non HDL - CHOL.,non-HDL,Non-HDL Cholesterol,Non-HDL холестерин,LIPIDS,B,mmol/L,43396-1,0
+T.Cholesterol/Chol.холестерин общий,TC,Total Cholesterol,Холестерин общий,LIPIDS,C,mmol/L,2093-3,0
+Triglycerides/Триглицериды,TG,Triglycerides,Триглицериды,LIPIDS,C,mmol/L,2571-8,0
+ALT/АЛТ,ALT,Alanine Aminotransferase,АЛТ,LIVER,C,U/L,1742-6,0
+Alk Phos/Щелочная фосфатаза,ALP,Alkaline Phosphatase,Щелочная фосфатаза,LIVER,C,U/L,6768-6,0
+amylase / AML,AML,Amylase,Амилаза,LIVER,C,,,
+AST/АСТ,AST,Aspartate Aminotransferase,АСТ,LIVER,C,U/L,1920-8,0
+Bilirubin,Bil,Bilirubin,Билирубин,LIVER,C,,,
+Bilirrubinémia Directa / прямой,DBil,Direct Bilirubin,Прямой билирубин,LIVER,C,,,
+GGT/ГГТ,GGT,Gamma-Glutamyl Transferase,Гамма-глутамилтрансфераза,LIVER,C,U/L,2324-2,0
+Bilirrubinémia Indirecta / непрямой,IBil,Indirect Bilirubin,Непрямой билирубин,LIVER,C,,,
+LDH/Лактатдегидрогеназа (ЛДГ),LDH,Lactate Dehydrogenase,ЛДГ,LIVER,C,U/L,2532-0,0
+T.Bilirubin/общий билирубин,TBil,Total Bilirubin,Общий билирубин,LIVER,C,umol/L,1975-2,0
+Blood,—,Blood,Кровь,OTHER,C,,,
+HFR/онкомаркер,"HFR (не международный стандарт, уточнение зависит от контекста)",HFR (Tumor Marker),Онкомаркер HFR,OTHER,C,,,
+Prothrombin Time/ INR/Протромбин,PT / INR,Prothrombin Time / INR,Протромбин (INR),OTHER,C,,,
+pH,pH,pH,pH,OTHER,C,,,
+Albumin/Альбумин,Alb,Albumin,Альбумин,PROTEINS,C,g/L,1751-7,0
+Rel.Albumina/Globulinas /Соотношение альбумин/глобулин,A/G,Albumin/Globulin Ratio,Соотношение альбумин/глобулин,PROTEINS,C,,,
+Alfa 1-Globulinas,α₁-glob,Alpha-1 Globulins,Альфа-1-глобулины,PROTEINS,C,,,
+Alfa 2-Globulinas,α₂-glob,Alpha-2 Globulins,Альфа-2-глобулины,PROTEINS,C,,,
+Anti-Tg (Thyreoglobulin),Anti-Tg,Anti-Thyroglobulin Antibodies,Anti-Tg,PROTEINS,C,,,
+Beta 1-Globulinas,β₁-glob,Beta-1 Globulins,Бета-1-глобулины,PROTEINS,C,,,
+Beta 2-Globulinas,β₂-glob,Beta-2 Globulins,Бета-2-глобулины,PROTEINS,C,,,
+Gama-Globulinas,γ-glob,Gamma Globulins,Гамма-глобулины,PROTEINS,C,,,
+Globulin/глобулин,Glob,Globulin,Глобулин,PROTEINS,C,,,
+IG/иммуноглобулины,"IgG, IgA, IgM",Immunoglobulins,IG,PROTEINS,C,,,
+Protein,Prot,Protein,Белок,PROTEINS,C,,,
+"Globulina Ligada às Hormonas Sexuais (SHBG) 
+SHBG Basal",SHBG,Sex Hormone-Binding Globulin (Basal),"SHBG, базальный",PROTEINS,C,,,
+Thyroglobulin/ ТГ/ Тиреоглобулин,Tg,Thyroglobulin,Тиреоглобулин,PROTEINS,C,,,
+Protein (Total)/общий белок,TP,Total Protein,Общий белок,PROTEINS,C,g/L,2885-2,0
+Creatinine/Креатинин/Serum,Cr,Creatinine,Креатинин,RENAL,C,umol/L,2160-0,0
+Urea/Мочевина,Urea / BUN,Urea,Мочевина,RENAL,C,mmol/L,22664-7,0
+Uric Acid/Мочевая кислота,UA,Uric Acid,Мочевая кислота,RENAL,C,umol/L,3084-1,0
+eGFR/рецептор эпидермального фактора роста/расчётная скорость клубочковой фильтрации,eGFR,eGFR (Estimated Glomerular Filtration Rate),СКФ,RENAL,C,,,
+Гепатит А IgG,Anti-HAV IgG,Anti-HAV IgG,Антитела IgG к гепатиту A,SEROLOGY,C,,,
+Anti-HAV-IgM (антитела класса IgM к вирусу гепатита А),Anti-HAV IgM,Anti-HAV IgM,Антитела IgM к вирусу гепатита А,SEROLOGY,C,,,
+Гепатит А IgM,Anti-HAV IgM,Anti-HAV IgM,Антитела IgM к гепатиту A,SEROLOGY,C,,,
+Anti-HCV/Вирус гепатита С,Anti-HCV,Anti-HCV,Антитела к HCV,SEROLOGY,C,,,
+Anti-HCV-total/антитела к антигенам вируса гепатита C,Anti-HCV Total,Anti-HCV Total Antibodies,Антитела к HCV (общие),SEROLOGY,C,,,
+Anti-Streptolysin O Quantitative/Антистрептолизин,ASO,Anti-Streptolysin O (Quantitative),Антистрептолизин (количественно),SEROLOGY,C,,,
+CHLAMYDIA TRACHOMATIS NATT (URINE)/Хламидии (моча),CT-NAAT,"Chlamydia trachomatis (NAAT, urine)","Хламидии (моча, NAAT)",SEROLOGY,C,,,
+EBV-EBNA IGG,EBNA IgG,EBV Nuclear Antigen IgG,EBV EBNA IgG,SEROLOGY,C,,,
+EBV -VCA-IgG,EBV-VCA IgG,EBV Viral Capsid Antigen IgG,EBV VCA IgG,SEROLOGY,C,,,
+EBV -VCA-IGM,EBV-VCA IgM,EBV Viral Capsid Antigen IgM,EBV VCA IgM,SEROLOGY,C,,,
+Вирус Эпштейна-Барр (Epstein-Barr virus),EBV,Epstein–Barr Virus (EBV),Вирус Эпштейна–Барр,SEROLOGY,C,,,
+H.PYLORI IgG/Helicobacter pylori,H. pylori IgG,H. pylori IgG,Helicobacter pylori IgG,SEROLOGY,C,,,
+retroviral ab 1 and 2/ Антитела ВИЧ,HIV Ab 1/2,HIV 1/2 Antibodies,Антитела к ВИЧ,SEROLOGY,C,,,
+HSV I & II IgM,HSV-1/2 IgM,HSV Type 1 & 2 IgM Antibodies,HSV I & II IgM,SEROLOGY,C,,,
+Гепатит В sAb,Anti-HBs,Hepatitis B Surface Antibody,Антитела к HBsAg / Поверхностные антитела к гепатиту B,SEROLOGY,C,,,
+HBsAg/ вирус гепатита В,HBsAg,Hepatitis B Surface Antigen,Поверхностный антиген HBV,SEROLOGY,C,,,
+Гепатит С ab,Anti-HCV Ab,Hepatitis C Antibodies (Ab),Антитела к вирусу гепатита C,SEROLOGY,C,,,
+HSV I IgG,HSV-1 IgG,Herpes Simplex Virus Type 1 IgG,HSV I IgG,SEROLOGY,C,,,
+HSV II IgG,HSV-2 IgG,Herpes Simplex Virus Type 2 IgG,HSV II IgG,SEROLOGY,C,,,
+NEISSERIA GONORRHOEA PCR/ПЦР ГОНОРЕИ,NG-PCR,Neisseria gonorrhoeae (PCR),ПЦР на гонорею,SEROLOGY,C,,,
+Тест VDRL/ Сифилис,VDRL,Syphilis (VDRL test),Сифилис (VDRL),SEROLOGY,C,,,
+Toxoplasma IgG/Антитела IgG к токсоплазме,Toxo IgG,Toxoplasma IgG Antibodies,Антитела IgG к токсоплазме,SEROLOGY,C,,,
+"Anti-TSH-Rezeptor, TRAK (CMIA)",TRAK / anti-TSHR,Anti-TSH Receptor (TRAK),Антитела к TSH-рецепторам,THYROID,C,,,
+Anti-Tiroperoxidase (anti-microssomas),Anti-TPO,Anti-Thyroid Peroxidase Antibodies,Антитела к тиреопероксидазе,THYROID,C,,,
+Anti-TPO (Thyreo-Peroxidase),Anti-TPO,Anti-Thyroid Peroxidase Antibodies,Anti-TPO,THYROID,C,,,
+Anti-Thyroid Peroxidase/Антитела к тиреоидной пероксидазе,Anti-TPO,Anti-Thyroid Peroxidase Antibodies,Антитела к тиреоидной пероксидазе,THYROID,C,,,
+Free Thyroxine/FREE T4,Free T4 / FT4,Free Thyroxine,Свободный Т4,THYROID,C,pmol/L,3024-7,0
+"T3, frei (freies Trijodothyronin)",Free T3 / FT3,Free Triiodothyronine,Свободный Т3,THYROID,C,,,
+TSH/ТТГ,TSH,Thyroid-Stimulating Hormone,ТТГ,THYROID,C,mIU/L,3016-3,0
+Раково-эмбриональный антиген (Carcinoembryonic antigen),CEA,Carcinoembryonic Antigen,Раково-эмбриональный антиген,TUMOR_MARKERS,C,,,
+Тест на простатоспецифический антиген (ПСА)/Prostate-Specific Antigen (PSA) Test,PSA,Prostate-Specific Antigen (PSA) Test,Тест на простатоспецифический антиген (ПСА),TUMOR_MARKERS,C,,,
+Eritrócitos,—,Casts,Цилиндры,URINE,C,,,
+Crystals,—,Crystals,Кристаллы,URINE,C,,,
+Culture 1,UCx,Culture (Urine),Бак. посев (Culture 1),URINE,C,,,
+Epithelial cells,—,Epithelial Cells,Эпителиальные клетки,URINE,C,,,
+Ketone,Ket,Ketone,Кетоны,URINE,C,,,
+Leucócitos,WBC (Urine),Leukocytes (Urine),Лейкоциты,URINE,C,,,
+Nitrite,Nit,Nitrite,Нитрит,URINE,C,,,
+Red Blood Cells,RBC (Urine),Red Blood Cells (Urine),Эритроциты,URINE,C,,,
+Densidade / Плотность,SG,Specific Gravity,Плотность,URINE,C,,,
+Urobilinogen,—,Urobilinogen,Уробилиноген,URINE,C,,,
+25-OH Vitamin D,25(OH)D,25-OH Vitamin D,Витамин D,VITAMINS,C,ng/mL,1989-3,0
+"Folate Serum
+Vitamin B 9 \Ácido Fólico",Folate / B9,Folate (Serum),Фолат / фолиевая кислота,VITAMINS,C,,,
+Vitamin B12,B12,Vitamin B12,Витамин B12,VITAMINS,C,pmol/L,2132-9,0

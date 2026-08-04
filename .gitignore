@@ -1,0 +1,9 @@
+# Never commit data. Ever.
+*.db
+*.sqlite
+*.sqlite3
+data/private/
+!examples/*.csv
+__pycache__/
+*.pyc
+.DS_Store

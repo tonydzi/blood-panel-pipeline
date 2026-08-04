@@ -1,0 +1,30 @@
+{
+  "_comment": "Ordered panel classifier. FIRST HIT WINS — order is meaningful. Keywords are matched case-insensitively as substrings against the analyte's English name, abbreviation, key and local-language name joined together. Bilingual (EN + RU) on purpose: lab exports are rarely in one language. Add your own language by appending keywords.",
+  "_ordering_note": "INFLAMMATION must precede PROTEINS, otherwise 'C-Reactive PROTEIN' is captured by the PROTEINS rule. This is the kind of ordering bug that only shows up on real data.",
+  "default_panel": "OTHER",
+  "rules": [
+    {"panel": "GLYCEMIC", "keywords": ["glucose", "hba1c", "glycated", "insulin", "гликир", "глюкоз", "инсулин"]},
+    {"panel": "LIPIDS", "keywords": ["cholesterol", "ldl", "hdl", "triglycer", "atherogenic", "non-hdl", "apob", "apolipoprotein", "lipoprotein(a)", "lp(a)", "холестерин", "липопрот", "триглицер", "атероген"]},
+    {"panel": "INFLAMMATION", "keywords": ["c-reactive", "crp", "homocyst", "hemocyst", "гомоцист", "реактивный белок"]},
+    {"panel": "LIVER", "keywords": ["alanine", "aspartate", "aminotransfer", "ggt", "glutamyl", "alkaline phos", "bilirubin", "lactate dehydrogenase", "ldh", "amylase", "билирубин", "фосфатаза", "трансфераза", "дегидрогеназа", "амилаз"]},
+    {"panel": "PROTEINS", "keywords": ["total protein", "albumin", "globulin", "a/g", "albumina", "белок", "альбумин", "глобулин"]},
+    {"panel": "RENAL", "keywords": ["urea", "bun", "creatinine", "egfr", "glomerular", "uric acid", "мочевин", "креатинин", "мочевая кислота", "клубочков"]},
+    {"panel": "ELECTROLYTES", "keywords": ["sodium", "potassium", "chloride", "bicarbonate", "calcium", "phosphate", "magnesium", "натрий", "калий", "хлор", "бикарбонат", "кальций", "фосфат", "магний"]},
+    {"panel": "IRON", "keywords": ["ferritin", "serum iron", "transferrin", "tibc", "saturation", "феррит", "железо", "трансферрин"]},
+    {"panel": "VITAMINS", "keywords": ["vitamin d", "25-oh", "vitamin b12", "b12", "folate", "folic", "витамин", "фолат", "фолиев"]},
+    {"panel": "THYROID", "keywords": ["thyroid", "thyroxine", "triiodo", "tsh", "ft4", "ft3", "trak", "тирео", "щитовид", "тиреотроп"]},
+    {"panel": "HORMONES", "keywords": ["testosterone", "cortisol", "dhea", "estradiol", "prolactin", "lh", "fsh", "igf-1", "somatomedin", "growth hormone", "тестостерон", "кортизол", "эстрадиол", "пролактин", "соматомедин"]},
+    {"panel": "TUMOR_MARKERS", "keywords": ["prostate-specific", "psa", "cea", "ca-125", "ca 19-9", "afp", "простатоспециф"]},
+    {"panel": "SEROLOGY", "keywords": ["hiv", "hbsag", "hbsab", "hepatitis", "anti-hcv", "anti-hav", "herpes", "hsv", "cmv", "ebv", "syphilis", "streptolysin", "pylori", "chlamydia", "neisseria", "gonorrho", "toxoplasma", "naat", "pcr", "гепатит", "герпес", "вич"]},
+    {"panel": "AUTOIMMUNE", "keywords": ["rheumatoid", "anti-ccp", "citrullinated", "ana ", "ревматоид"]},
+    {"panel": "URINE", "keywords": ["casts", "crystals", "epithelial", "ketone", "nitrite", "specific gravity", "urobilinogen", "leukocyte esterase", "urinalysis", "urine", "мочи", "моча"]},
+    {"panel": "CBC", "keywords": ["hemoglobin", "hematocrit", "erythrocyte", "red blood", "red cell", "white blood", "white cell", "platelet", "mcv", "mch", "mchc", "rdw", "neutrophil", "lymphocyt", "monocyt", "eosinophil", "basophil", "nucleated", "reticulocyt", "fluorescence ratio", "immature reticulocyte", "sedimentation", "esr", "g6pd", "mixed cell", "mxd", "гемоглобин", "эритроцит", "лейкоцит", "тромбоцит", "нейтрофил", "лимфоцит", "моноцит", "эозинофил", "базофил", "соэ", "гематокрит", "ретикулоцит"]}
+  ],
+  "evidence_tiers": {
+    "_comment": "See data/evidence_tiers.md for what A/B/C/D mean and why. Default when nothing matches is C.",
+    "default": "C",
+    "A": ["hba1c", "apolipoprotein b", "apob"],
+    "B": ["c-reactive", "crp", "homocyst", "lipoprotein(a)", "lp(a)", "omega", "ldl cholesterol", "non-hdl", "glucose – fasting", "glucose - fasting"],
+    "D": ["dunedin", "grimage", "biological age", "epigenetic", "phenoage"]
+  }
+}

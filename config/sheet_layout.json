@@ -1,0 +1,21 @@
+{
+  "_comment": "Column/row layout of the wide lab comparison sheet. Edit this file to match YOUR sheet; the code has no hardcoded layout. All indices are 0-based.",
+  "columns": {
+    "key": 0,
+    "name_ru": 1,
+    "name_en": 2,
+    "name_pt": 3,
+    "abbrev": 4,
+    "interpretation": 35
+  },
+  "rows": {
+    "header_label": 0,
+    "date": 1,
+    "first_data": 2
+  },
+  "section_words": ["БИОХИМИЯ", "ГЕМАТОЛОГИЯ", "BIOCHEMISTRY", "HEMATOLOGY"],
+  "noise_keys": ["комментарий", "comment", "casrs"],
+  "nonnumeric_words": ["нет", "отсут", "n/a", "не сдав", "не опр", "none", "absent"],
+  "derived_words": ["расчет", "расчёт", "формул", "примерно", "calculated", "estimated"],
+  "reference_header_words": ["норм", "referen", "range"]
+}
