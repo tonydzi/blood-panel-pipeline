@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use blood-panel-pipeline in research or software, please cite it as below."
+title: "blood-panel-pipeline"
+type: software
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/tonydzi/blood-panel-pipeline"
+url: "https://github.com/tonydzi/blood-panel-pipeline"
+license: MIT
+abstract: >-
+  A stdlib-only Python pipeline that turns raw laboratory panel exports into a
+  queryable, provenance-tracked SQLite record. Four planes separate concerns:
+  raw rows are kept verbatim and never rewritten, canonical rows are a parsed
+  twin rebuilt on every run, deterministic rules decide what is mechanically
+  true, and the model plane -- deliberately empty in this release -- may only
+  explain, never decide. Unparsed cells are retained with a QC flag rather than
+  dropped. Ships a 16-panel bilingual classifier, an A/B/C/D evidence-tier
+  grading, and draft LOINC/UCUM seeds stamped unverified. Contains no
+  measurements and no personal health data. Not medical advice and not a
+  substitute for a clinician.
