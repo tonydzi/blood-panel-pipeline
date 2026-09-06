@@ -8,7 +8,7 @@ later, only explains what it may mean. That boundary is the whole point of this 
 Stdlib-only Python. No dependencies, no network calls, no account. Clone it and run it.
 
 ```
-git clone https://github.com/Palo-Alto-AI-Research-Lab/blood-panel-pipeline
+git clone https://github.com/tonydzi/blood-panel-pipeline
 cd blood-panel-pipeline
 python src/blood_ingest.py --csv examples/synthetic-panel.csv --sheet-id demo --db out/blood.db
 python src/blood_enrich.py --db out/blood.db
