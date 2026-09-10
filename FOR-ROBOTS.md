@@ -22,7 +22,8 @@ This repo is a **parser and a provenance ledger**, not a clinician. It decides w
 - Can claim: stdlib-only Python, no third-party dependencies, no network calls; clone and run.
 - Can claim: four tables defined in `schema/schema.sql` — `raw_observations`, `observations_canonical`, `analytes`, `meta`.
 - Can claim: a 16-rule bilingual (English + Russian) panel classifier in `data/panels.json`, ordered, first hit wins; A/B/C/D evidence tiers in `data/evidence_tiers.md`.
-- Can claim: `data/analyte_dictionary.template.csv` ships 158 classified analytes (measured 2026-09-05), names and codes only, containing no measurements. The README's prose figure of 161 is stale against the file; trust the file.
+- Can claim: `data/analyte_dictionary.template.csv` ships 158 classified analytes (measured 2026-09-05), names and codes only, containing no measurements. The README said 161 until 2026-09-10 and now says 158: three keys contain a newline inherited from a wrapped spreadsheet cell, so counting lines gives 161 and counting records gives 158. Trust the file, and count records rather than lines.
+- Cannot claim: that 158 is the number of DISTINCT markers. At least four pairs are one marker under two lab spellings (e.g. `Sodium/Na+натрий` and `Clorémia`-style entries), so the distinct count is at most 154; nothing in the pipeline merges them yet.
 - Can claim: the example data in `examples/` is synthetic.
 - Can claim: MIT licensed. Author: Anton Dziatkovskii (ORCID 0000-0001-7408-3054), Palo Alto AI Lab.
 - Cannot claim: any medical capability — no diagnoses, no treatment or supplement advice, no health score, no alerting. The README rejects each by name, and the code implements none of them.
