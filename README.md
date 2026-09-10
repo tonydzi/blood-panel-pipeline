@@ -13,7 +13,14 @@ cd blood-panel-pipeline
 python src/blood_ingest.py --csv examples/synthetic-panel.csv --sheet-id demo --db out/blood.db
 python src/blood_enrich.py --db out/blood.db
 python tests/test_pipeline.py
+python tests/reproduce_miscoding.py
 ```
+
+The second script re-derives the LOINC miscoding result in [`docs/DEVLOG.md`](docs/DEVLOG.md)
+from the two shipped mapping files: 52 codes assigned by substring matching, 12 of them
+wrong, and the longest-first "fix" changing exactly one row of 158. It uses no data and
+no database -- the defect lives entirely in the public mapping, so the public mapping is
+enough to check the claim. Exits non-zero if the published figures no longer reproduce.
 
 The example data is synthetic. Point `--csv` at your own export and edit
 `config/sheet_layout.json` to match its geometry.
@@ -79,8 +86,11 @@ parse: `ok`, `empty`, `nonnumeric`, `derived`, `multi_value`, `embedded_unit`,
   scaffold to speed up verification, never asserted as truth. Verify at loinc.org and
   with a clinician before any clinical use.
 - **[`data/analyte_dictionary.template.csv`](data/analyte_dictionary.template.csv)** —
-  161 real-world analytes already classified, as a starting point. Names and codes only;
-  it contains no measurements.
+  158 real-world analytes already classified, as a starting point. Names and codes only;
+  it contains no measurements. (This said 161 until 2026-09-10: three keys contain a
+  newline inherited from a wrapped spreadsheet cell, so counting lines gives 161 and
+  counting records gives 158. Counted with the convenient tool instead of the correct
+  one -- the same class of mistake this repo is about.)
 
 The dictionary is a CSV on purpose. Editing a spreadsheet and re-running beats patching
 Python, and it means the person maintaining the mapping does not have to be the person
