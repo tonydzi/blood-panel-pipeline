@@ -1,5 +1,64 @@
 # blood-panel-pipeline
 
+Turns your old lab results (a spreadsheet export) into one searchable local database, and keeps the original numbers untouched.
+
+**Who it's for:** people who track their own blood tests and want to bring clean data to a doctor.
+**What you get:** a small SQLite file with every lab value, its unit, its reference range and where it came from. It runs offline, with no accounts.
+
+## Quick start
+1. Install Python 3 (no other packages are needed).
+2. Clone the repo: `git clone https://github.com/tonydzi/blood-panel-pipeline` and open the folder.
+3. Run the demo on the fake sample data: `python src/blood_ingest.py --csv examples/synthetic-panel.csv --sheet-id demo --db out/blood.db`
+
+**Done when:** the command prints a "build summary" and `out/blood.db` exists. Then run `python tests/test_pipeline.py` and look for `ALL GREEN`.
+
+This is not medical advice. It does not diagnose anything. Show the output to a doctor.
+
+> Want an AI agent to do it for you? Paste this to Claude Code / Codex / Cursor:
+> "Read the 'For AI agents' section of https://github.com/tonydzi/blood-panel-pipeline and set it up for me."
+
+## For AI agents
+
+### Preconditions
+- Any OS with Python 3 (checked with 3.12). Standard library only, no `pip install`.
+- No account, key or network needed.
+- Ask the human: where their own lab export (CSV) is, and whether its layout matches `config/sheet_layout.json`.
+
+### Install
+```
+git clone https://github.com/tonydzi/blood-panel-pipeline
+cd blood-panel-pipeline
+```
+
+### Configure
+- `config/sheet_layout.json`: describes the geometry of the CSV. Edit it to match the human's export (ask the human; do not guess).
+- `data/analyte_dictionary.template.csv`, `data/panels.json`, `data/loinc_seed.json`: the mapping files. Optional edits.
+- Build the database, then enrich it (the first command creates the output folder):
+  ```
+  python src/blood_ingest.py --csv examples/synthetic-panel.csv --sheet-id demo --db out/blood.db
+  python src/blood_enrich.py --db out/blood.db
+  ```
+  For real data replace `--csv` with the human's file path. `--title` and `--layout` are optional flags.
+
+### Verify
+```
+python tests/test_pipeline.py
+python tests/reproduce_miscoding.py
+```
+Expected: the first ends with `ALL GREEN` and exit code 0; the second ends with `REPRODUCED` and exit code 0. Real run on 2026-11-13: both exit 0, and the ingest of the sample prints `analytes: 21 | raw_observations: 61`.
+
+### Uninstall / rollback
+Delete the cloned folder and any `.db` file you created. Nothing is installed globally and the pipeline never writes outside the `--db` path and its dictionary copy.
+
+### Rules for the agent
+- Never commit real lab results, real CSV exports or the generated `.db` to git. Keep them outside the repo or ignored.
+- Never upload health data anywhere. The pipeline is local and offline on purpose; do not add network calls.
+- Do not give medical interpretation. Every LOINC code is a draft (`loinc_verified=0`); do not present it as verified.
+- Do not overwrite raw rows; fix the parser and rebuild instead.
+- If the human's CSV layout is unclear, ask the human.
+
+## Details
+
 Turn a decade of raw lab panels into a queryable, provenance-tracked record with [src/blood_ingest.py](src/blood_ingest.py).
 
 Deterministic rules in [src/blood_ingest.py](src/blood_ingest.py) decide what is mechanically true. A language model, if you add one
