@@ -45,6 +45,7 @@ cd blood-panel-pipeline
 python tests/test_pipeline.py
 python tests/reproduce_miscoding.py
 ```
+These two run on their own temporary database, so they do not check the `out/blood.db` you just built. To check that one, run `python -c "import sqlite3; print(sqlite3.connect('out/blood.db').execute('select count(*) from raw_observations').fetchone())"`: for the sample it prints `(61,)`. The enrich step also writes `out/analyte_dictionary.csv` next to the database.
 Expected: the first ends with `ALL GREEN` and exit code 0; the second ends with `REPRODUCED` and exit code 0. Real run on 2026-11-13: both exit 0, and the ingest of the sample prints `analytes: 21 | raw_observations: 61`.
 
 ### Uninstall / rollback
